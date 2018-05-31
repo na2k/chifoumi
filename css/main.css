@@ -1,0 +1,223 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: black;
+  color: white;
+  font-family: Arial;
+}
+
+header{
+  width: 100%;
+  height: 5vh;
+  background: linear-gradient(blue,mediumslateblue,blue);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+nav{
+  width: 30%;
+  height: 100%;
+  float: right;
+  text-align: center;
+  line-height: 5vh;
+}
+
+#commentjouer{
+  position: absolute;
+  left: 25%;
+  z-index: 2;
+  width: 50%;
+  height: 90vh;
+  background: gold;
+  color: black;
+  outline: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  visibility: hidden;
+}
+
+#commentjouer *{
+  margin-top: 10px;
+}
+
+#commentjouer .title{
+  text-align: center;
+}
+
+#historique{
+  position: absolute;
+  text-align: center;
+  left: 25%;
+  z-index: 3;
+  width: 50%;
+  height: 90vh;
+  background: black;
+  color: white;
+  outline: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  visibility: hidden;
+  overflow-y: auto;
+}
+
+#historique *{
+  margin-top: 10px;
+}
+
+#historique .title{
+  text-align: center;
+}
+#parties{
+  width: 80%;
+  margin: auto;
+  height: 80vh;
+}
+
+#parties tr td:nth-child(1){
+  width: 50px;
+}
+
+#parties tr td{
+  height: 20px;
+}
+.navbtn{
+  display: inline-block;
+  width: 40%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.navbtn:hover{
+  background: blue;
+  color: white;
+  cursor: pointer;
+}
+
+.btnFermer{
+  margin: auto;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.btnFermer:hover{
+  background: blue;
+  color: white;
+  cursor: pointer;
+}
+#buttons{
+  margin: 150px auto 0;
+  width: 50%;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: gray;
+}
+
+#btn_p:hover{
+  background: radial-gradient(red, #7f0000);
+  cursor: pointer;
+}
+
+#btn_f:hover{
+  background:  radial-gradient(lime, #007f00);
+  cursor: pointer;
+}
+
+#btn_c:hover{
+  background: radial-gradient(blue, #00007f);
+  cursor: pointer;
+}
+
+#affichage{
+  margin: 100px auto 0;
+  width: 50%;
+  height: 300px;
+  /* border: 1px solid red; */
+  font-size: 36px;
+  text-align: center;
+}
+
+.score{
+  margin-top: 10px;
+}
+
+#gauche{
+  width: 50%;
+  height: 80px;
+  float: left;
+  /* outline: 1px solid red */
+}
+
+#droite{
+  width: 50%;
+  height: 80px;
+  float: right;
+  /* outline: 1px solid blue; */
+}
+
+#resultat{
+  margin-top: 100px;
+}
+
+#commentaire{
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid lime; */
+}
+#commentaire tr td{
+  height: 80px;
+  font-size: 36px;
+  border-radius: 10px;
+  /* border: 1px solid white; */
+}
+
+.player {
+  animation-duration: 1s;
+  animation-name: animationPlayer;
+}
+
+@keyframes animationPlayer {
+  from {
+    color: lime;
+  }
+
+  to {
+    color: white;
+  }
+}
+
+.cpu {
+  animation-duration: 1s;
+  animation-name: animationCpu;
+}
+
+@keyframes animationCpu {
+  0% {
+    color: red;
+  }
+
+  95% {
+    color: white;
+  }
+}
+
+td.egalite{
+  background: linear-gradient(#00007f, blue, #00007f);
+}
+td.victoire{
+  background: linear-gradient(#007f00, lime, #007f00);
+}
+td.defaite{
+  background: linear-gradient(#7f0000, red, #7f0000);
+}

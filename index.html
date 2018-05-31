@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <title>100 titre</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <button class="navbtn" id="btn1">
+        Comment jouer?
+      </button>
+      <button class="navbtn" id="btn2">
+        Résultat
+      </button>
+    </nav>
+  </header>
+  <div id="historique">
+    <h1 class="title">Résultats</h1>
+    <button class="btnFermer" id="btn4">Fermer</button>
+    <table id="parties">
+      <th>
+        <td></td>
+      </th>
+    </table>
+  </div>
+  <div id="commentjouer">
+    <h1 class="title">Comment jouer?</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At recusandae dolor saepe quisquam, officia quam inventore non rem error dicta! Nihil, quaerat! Labore ratione similique ad eum quae, inventore minus.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <button class="btnFermer" id="btn3">Fermer</button>
+  </div>
+  <section id="buttons">
+    <button class="btn" id="btn_p" onclick=play(pierre)>
+          <img src="img/cave-painting.svg" width="100px" height="100px" alt="pierre">
+        </button>
+    <button class="btn" id="btn_f" onclick=play(feuille)>
+          <img src="img/paper.svg" width="100px" height="100px" alt="feuille">
+        </button>
+    <button class="btn" id="btn_c" onclick=play(ciseaux)>
+          <img src="img/scissors.svg" width="100px" height="100px" alt="ciseaux">
+
+        </button>
+  </section>
+  <section id="affichage">
+    <div id="gauche">
+      <p>Joueur</p>
+      <div class="score" id="scorePlayer">0</div>
+    </div>
+    <div id="droite">
+      <p>CPU</p>
+      <div class="score" id="scoreCpu">0</div>
+    </div>
+    <div id="resultat">
+      <table id="commentaire">
+
+      </table>
+    </div>
+  </section>
+  <script src="js/main.js" charset="utf-8"></script>
+</body>
+
+</html>
