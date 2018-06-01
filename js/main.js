@@ -4,11 +4,30 @@ var ciseaux = "ciseaux";
 var scorePlayer = 0;
 var scoreCpu = 0;
 var idPartie = 1;
+var timer;
 
 var btn1 = document.getElementById("btn1");
 var btn2 = document.getElementById("btn2");
 var btn3 = document.getElementById("btn3");
 var btn4 = document.getElementById("btn4");
+
+
+$(document).ready(function (){
+  // $("#cubetest").keypress(function(){
+  //   $(this).animate({"left": "+=10px"}, "slow");
+  //   // .animate({
+  //   //   marginLeft: "50%",
+  //   //   opacity: "100"
+  //   // });
+  // });
+  // $('#commentjouer').keydown(function(){
+  //    $(this).css('background-color', 'red');
+  //  });
+  //  $('#commentjouer').keyup(function(){
+  //      $(this).css('background-color', 'silver');
+  //  });
+});
+
 
 btn1.onclick = function commentJouer(){
   document.getElementById("commentjouer").style.visibility = "visible";
